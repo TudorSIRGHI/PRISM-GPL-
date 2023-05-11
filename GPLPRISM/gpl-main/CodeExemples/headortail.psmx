@@ -1,0 +1,64 @@
+head = fn() {
+    write("\n> head");
+}
+tail = fn() {
+    write("\n> tail");
+}
+won = fn() {
+    write("\nCongratulations! You guessed!\n");
+}
+lost = fn() {
+    write("\nYou failed 50/50.\n");
+}
+choiceArr = [head, tail]
+
+numberToChoice = fn(input){
+    if(input == 0){
+        choiceArr[0]();
+    }
+    if(input == 1){
+        choiceArr[1]();
+    }
+}
+
+write("\nWelcome to the Head or Tail game!");
+write("\n\nPlease make your choice:");
+write("\n0: head");
+write("\n1: tail");
+
+write("\n\nMy choice: ")
+input = read()
+write("\n\nYour choice: ");
+numberToChoice(input);
+
+computerChoice = rand(2);
+
+if(computerChoice == 0){
+
+    write("\nComputer choice: ");
+    numberToChoice(computerChoice);
+    write("\n\nResult:");
+
+    if(input == 0){
+        won();
+    }
+
+    if(input == 1){
+        lost();
+    }
+}
+
+if(computerChoice == 1){
+
+    write("\nComputer choice: ");
+    numberToChoice(computerChoice);
+    write("\n\nResult:");
+
+    if(input == 1){
+        won();
+    }
+
+    if(input == 0){
+        lost();
+    }
+}

@@ -1,0 +1,3 @@
+write("\nYour random number is!\n");
+rand = rand(101);
+write(rand);

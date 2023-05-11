@@ -1,0 +1,42 @@
+write("How many districts are in Moldova?   ");
+q = int(read());
+if(q == 32)
+{
+    write("You got it!");
+}
+else
+{
+    write("Bad answer!");
+}
+
+write("   What year did Moldova gain its independence?   ");
+a = int(read());
+if(a == 1991)
+{
+    write("You got it!");
+}
+else
+{
+    write("Bad answer!");
+}
+
+write("   What year was UTM founded?   ");
+b = int(read());
+if(b == 1964)
+{
+    write("You got it!");
+}
+else
+{
+    write("Bad answer!");
+}
+
+s = q + b + a
+if(s == 3987)
+{
+    write("   You answered all good!");
+}
+else
+{
+    write("   Man, go and read some useful books!");
+}
