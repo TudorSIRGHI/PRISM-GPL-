@@ -1,0 +1,43 @@
+write("\nLet's play Russian Roulette!\n");
+chanceone = rand(100);
+
+if (chanceone > 90)
+{
+    write("\nYou Died from first bullet!\n");
+}
+else
+{
+    chancetwo = rand(101);
+    if (chancetwo > 80)
+    {
+        write("\nYou Died from second bullet!\n");
+    }
+    else
+    {
+        chancethree = rand(101);
+        if (chancethree > 60)
+        {
+            write("\nYou Died from third!\n");
+        }
+        else
+        {
+            chancefour = rand(101);
+            if (chancefour > 50)
+            {
+                write("\nYou Died from furth bullet!\n");
+            }
+            else
+            {
+                chancefive = rand(101);
+                if (chancefive > 30)
+                {
+                    write("\nYou Died from last bullet!\n");
+                }
+                else
+                {
+                    write("\nYou Survived!\n");
+                }
+            }
+        }
+    }
+}

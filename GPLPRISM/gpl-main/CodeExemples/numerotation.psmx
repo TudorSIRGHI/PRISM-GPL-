@@ -1,0 +1,9 @@
+write("\nStart Number\n");
+i = int(read());
+write("\nEnd Number\n");
+x = int(read());
+for (i < x)
+{
+    i = i + 1;
+    write("\n" + i);
+}
